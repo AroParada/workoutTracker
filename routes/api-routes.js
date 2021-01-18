@@ -12,7 +12,7 @@ Workout.create(body, (err, data) => {
 });
 });
 
-app.get("/api/workouts", (req, res) => {
+router.get("/api/workouts", (req, res) => {
   Workout.find({}, 
     (err, data) => {
     if (err) {
@@ -23,7 +23,7 @@ app.get("/api/workouts", (req, res) => {
   });
 });
 
-app.get("/api/workouts/range", (req, res) => {
+router.get("/api/workouts/range", (req, res) => {
 	Workout.find({}, (err, data) => {
 		if (err) {
 			throw err;
@@ -35,7 +35,7 @@ app.get("/api/workouts/range", (req, res) => {
 		.sort({ day: -1 });
 });
   
-app.put("/api/workouts/:id", ({ params, body }, res) => {
+router.put("/api/workouts/:id", ({ params, body }, res) => {
     console.log(body)
 	db.Workout.findByIdAndUpdate(
         { _id: params.id },
