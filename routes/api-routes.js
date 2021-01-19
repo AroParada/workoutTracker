@@ -1,4 +1,4 @@
-const Workout = require("../models/workout");
+const Workout = require("../models/workout.js");
 const router = require("express").Router();
 
 router.post("/api/workout", ({ body }, res) => {
