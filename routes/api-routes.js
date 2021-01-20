@@ -2,7 +2,6 @@ const Workout = require("../models/workout.js");
 const router = require("express").Router();
 
 router.post("/api/workouts", ({ body }, res) => {
-console.log(body);
 Workout.create(body, (err, data) => {
     if (err) {
         throw err;
@@ -18,7 +17,6 @@ router.get("/api/workouts", (req, res) => {
     if (err) {
         throw err;
     } else {
-		console.log(data)
 		return res.json(data);
 	}
   });
@@ -37,7 +35,6 @@ router.get("/api/workouts/range", (req, res) => {
 });
   
 router.put("/api/workouts/:id", ({ params, body }, res) => {
-    console.log(body)
 	Workout.findOneAndUpdate(
         { _id: params.id },
         
