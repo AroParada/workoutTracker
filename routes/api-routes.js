@@ -18,8 +18,9 @@ router.get("/api/workouts", (req, res) => {
     if (err) {
         throw err;
     } else {
-        return res.json(data);
-    }
+		console.log(data)
+		return res.json(data);
+	}
   });
 });
 
@@ -37,7 +38,7 @@ router.get("/api/workouts/range", (req, res) => {
   
 router.put("/api/workouts/:id", ({ params, body }, res) => {
     console.log(body)
-	Workout.findByIdAndUpdate(
+	Workout.findOneAndUpdate(
         { _id: params.id },
         
 		{ 
