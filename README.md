@@ -24,10 +24,12 @@ The user should be able to:
 
   * View the total duration of each workout from the past seven workouts on the `stats` page.
 
+### Screenshot and deployed site link
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
+* [HEROKU Deployment](https://track-the-workout.herokuapp.com/)
 
-  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
+<img src="public\assets\Screenshot (132).png">
 
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+### Contact 
+haroldparada20@gmail.com
 
