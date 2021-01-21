@@ -29,6 +29,8 @@ The user should be able to:
 * [HEROKU Deployment](https://track-the-workout.herokuapp.com/)
 
 <img src="public\assets\Screenshot (132).png">
+<img src="public\assets\Screenshot (136).png">
+
 
 ### Contact 
 haroldparada20@gmail.com
